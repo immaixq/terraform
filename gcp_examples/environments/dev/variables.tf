@@ -13,3 +13,28 @@ variable "bucket_location" {
   type        = string
   default     = "US"  # Optional: specify location
 }
+
+variable "cloud_sql_name" {
+  description = "name of the cloud sql instance"
+  type = string
+}
+
+variable "database_version" {
+  description = "database version of the cloud sql instance"
+  type = string
+}
+
+variable "cloud_sql_db_region" {
+  description = "region of the cloud sql instance"
+  type = string
+}
+
+variable "tier" {
+  description = "tier of the cloud sql instance"
+  type = string
+}
+
+variable "database_name" {
+  description = "database name of the cloud sql instance"
+  type = string
+}
